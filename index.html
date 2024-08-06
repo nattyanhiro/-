@@ -3,110 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>インターンシップ詳細</title>
+    <title>2つの項目のWebサイト</title>
     <style>
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* ベースのスタイル */
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f0f0;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #f39c12; /* オレンジ色 */
+            background: #333;
             color: #fff;
+            padding: 1rem;
             text-align: center;
-            padding: 20px 0;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            font-size: 2em;
         }
 
         main {
-            background-color: #5bc0de; /* 水色 */
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 1rem;
         }
 
         section {
-            margin-bottom: 30px;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
 
-        h2 {
-            color: #fff;
-            font-size: 1.8em;
-            border-bottom: 2px solid #fff;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-
-        p {
-            color: #333;
-            font-size: 1.2em;
-            line-height: 1.8;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
+        section h2 {
+            margin-top: 0;
         }
 
         footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 10px;
-            background-color: #333;
+            background: #333;
             color: #fff;
-            font-size: 0.9em;
-            border-radius: 5px;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>インターンシップ</h1>
+        <h1>私のお菓子作り</h1>
     </header>
     <main>
-        <section>
-            <h2>トピック</h2>
-            <p>ウェブ開発とHTML/CSSの基礎を学びます。</p>
-            <img src="run.png" alt="サンプル">
+        <section id="item1">
+            <h2>最近作ったお菓子</h2>
+            <p>カップケーキ</p>
+            <div class="image-center">
+               <img src="https://github.com/nattyanhiro/tesuto/blob/main/run.png?raw=true" alt="サンプル">
+            </div>
         </section>
-        <section>
-            <h2>内容</h2>
-            <p>HTMLとCSSを使用した基本的なウェブサイトの作成方法を学びます。</p>
-            <p><a href="index.html">要素の一覧へ</a></p>
-        </section>
-        <section>
-            <h2>日程</h2>
-            <p>7月15日（月） - 7月19日（金）</p>
+        <section id="item2">
+            <h2>次作りたいお菓子</h2>
+            <p>チョコレートブラウニー</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 インターンシップ事務局</p>
+        <p>&copy; 2024 私のお菓子作り</p>
     </footer>
 </body>
 </html>
-
-
