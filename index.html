@@ -61,8 +61,12 @@
             border-radius: 4px; /* 任意で画像の角を丸める */
         }
 
-        .field{
-            display:flex;
+        .flex{
+           display: flex;
+           justify-content: space-between;
+        }
+        .flex>p{
+           width: 49%;
         }
     </style>
 </head>
@@ -72,8 +76,8 @@
     </header>
     <main>
         <section id="item1">
-            <h2>最近作ったお菓子</h2>
-              <div class="field">
+            <h1>最近作ったお菓子</h1>
+              <div class="flex">
            　　 <p>カップケーキ</p>
                 　<p>レシピ</p>
                　 <p>・ブラックカップケーキ粉</p>
@@ -89,7 +93,7 @@
               </div>
         </section>
         <section id="item2">
-            <h2>次作りたいお菓子</h2>
+            <h1>次作りたいお菓子</h1>
             <p>チョコレートブラウニー</p>
         </section>
     </main>
