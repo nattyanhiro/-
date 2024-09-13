@@ -31,11 +31,19 @@
             padding: 1rem;
             border: 1px solid #ddd;
             border-radius: 4px;
-            color: #CC0000;
+            color: #CC0000; /* テキスト色を調整 */
         }
 
         section h2 {
             margin-top: 0;
+            color: #CC0000; /* セクション見出しの色を調整 */
+        }
+
+        img {
+            max-width: 100%; /* 画像が親要素に合わせてリサイズされるようにする */
+            height: auto; /* 高さは自動調整 */
+            border: 1px solid #ddd; /* 画像に軽いボーダーを追加 */
+            border-radius: 4px; /* 画像の角を丸める */
         }
 
         footer {
@@ -57,12 +65,12 @@
     </header>
     <main>
         <section id="item1">
-            <h1>最近作ったお菓子</h1>
+            <h2>最近作ったお菓子</h2>
             <p>カップケーキ</p>
-            <img src="https://github.com/nattyanhiro/-/blob/main/%E3%82%AB%E3%83%83%E3%83%97%E3%82%B1%E3%83%BC%E3%82%AD.jpg?raw=true" alt="サンプル">
+            <img src="https://github.com/nattyanhiro/-/blob/main/%E3%82%AB%E3%83%83%E3%83%97%E3%82%B1%E3%83%BC%E3%82%AD.jpg?raw=true" alt="カップケーキ">
         </section>
         <section id="item2">
-            <h1>次作りたいお菓子</h1>
+            <h2>次作りたいお菓子</h2>
             <p>チョコレートブラウニー</p>
         </section>
     </main>
